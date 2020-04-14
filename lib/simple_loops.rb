@@ -32,8 +32,13 @@ end
 
 def return_string_array(array)
   new_array = []
-  array.each do |item|
-    new_array.push((item.to_s))
+  counter = 0
+  # array.each do |item|
+  #   new_array.push((item.to_s))
+  # end
+  while array[counter] do
+    new_array.push(array[counter].to_s)
+    counter += 1
   end
 
 end
